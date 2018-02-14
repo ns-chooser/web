@@ -25,8 +25,7 @@
 //				return
 //			} else {
 //                return
-//            }
-			
+//          }
 			//display user's choices
 //			var UserChoices = "Your choices <ul>"
 //			for (i = 0; i < counter; i++) {
@@ -41,6 +40,7 @@
             answer += "<li>" + choices[random].value + "</li>"
 			answer += "</ul>"
 			document.getElementById('result').innerHTML = answer
+			storeChoices()
 		}
 	}
     
@@ -65,7 +65,46 @@
             counter++
         }
     }
+	
+	function storageEvent(event) {
+		  event = event || window.event; // give IE8 some love
+		  alert('Yo people! Something just got stored!');
+		}
 
+		if (window.attachEvent) { // ::sigh:: IE8 support
+		   window.attachEvent('onstorage', storageEvent);
+		} else {
+			window.addEventListener('storage', storageEvent, false);
+	}
+	
+	function storeChoices(){
+
+		var choices = document.getElementsByTagName('input')
+	
+		var UserChoices;
+		for (i = 0; i < counter; i++) {
+			UserChoices += choices[i].value;
+		}
+
+		var foods = [
+		'apple',
+		'banana',
+		'grapes',
+		'apple',
+		];
+		
+		alert('Store choices called');
+		localStorage.foods = JSON.stringify(foods);	
+		localStorage.foods2 = JSON.stringify(choices);	
+//		alert('Stored data successfully?');
+	}
+
+	function displayQuestions(){
+	
+		var question = JSON.parse(localStorage.foods);	
+		//var q_array
+		//	alert(question);
+	}
 	</script>
         
 	</head>
@@ -96,7 +135,7 @@
 <!--
             <p>how many choice(number): <input type="text" id="n"></p>
 			-->
-            <div id="submit"><button type="button">Choose!</button></div> 
+            <div id="submit" onclick="storeChoices"><button type="button">Choose!</button></div> 
 		  <p id="result"></p>
         </div>
         
