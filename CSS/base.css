@@ -29,13 +29,14 @@ footer {
     line-height: 2rem;
 }
 
-.wrapper {
-    position: relative;
-}
-
 .foodHeader h1 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    border-radius: 15px;
+    background: rgba(255,255,255,.5);
+	width:30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #questions {
@@ -59,7 +60,7 @@ footer {
 }
 
 #submit {
-	margin-left: 20px;	
+	margin-left: 0px;	
 }
  
 .join {
@@ -69,7 +70,7 @@ footer {
     margin-right: auto;
 }
 
-.userResult{
+.userfff{
     border-radius: 15px;
     height: 500px;
     background-color: white;/*#F9BF45;*/
@@ -80,20 +81,19 @@ footer {
     
 }
 
-.userResult h2 {
-    text-align: center;
-}
-
 .userInput {
     border-radius: 15px;
-    height: 500px;
+    height: auto;
     background: rgba(255,255,255,.5); 
     width: 40%;
     margin-right: auto;
-}
+    margin-left: auto;
+	}
 
 .newInput {
     text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
 }
 
 .userInput input {
@@ -104,15 +104,19 @@ footer {
     text-align: center;
 }
 
+.userInput #result {
+	text-align:center;
+}
+
 header {
     background-color: dimgrey;
     text-align: center;
 }
 
 .block1, .block2, .block3, .block4 {
-    background-color: burlywood;
+    border-radius: 15px;
+    background: rgba(255,255,255,.5);
     width: 40%;
-    border: 2px solid;
     margin-right: auto;
     margin-left: auto;
 }
@@ -121,8 +125,8 @@ header {
 	margin: 0;
 }
 
-.block1 h2, .block2 h2, .block3 h2, .block4  h2{
-	margin: 0;
+.block1, .block2, .block3, .block4 {
+    width: 200px;
 }
 
 .submit{
@@ -140,24 +144,6 @@ table{
     margin-left: auto;
 }
 
-
-.block1 {
-    width: 200px;
-}
-
-.block2 {
-    width: 200px;
-}
-
-.block3 {
-    width: 200px;
-}
-
-.block4 {
-    width: 200px;
-}
-
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -168,14 +154,17 @@ nav ul {
 
 nav li {
     float: left;
+    display: block;
 }
 
-nav p {
+#pagetitle {
     color: white;
-    font-size: 20px;
-    width: 90px;
+    font-size: 40px;
+    width: 170px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 nav li a {
@@ -184,8 +173,7 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-top: 7px;
-    
+    margin-top: 7px;    
 }
 
 /* Change the link color to #111 (black) on hover */
