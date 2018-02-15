@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
     background-size: 90%;
@@ -31,7 +30,6 @@ footer {
 }
 
 .wrapper {
-    height: 100%;
     position: relative;
 }
 
@@ -111,17 +109,54 @@ header {
     text-align: center;
 }
 
-.block1 h2 {
+.block1, .block2, .block3, .block4 {
+    background-color: burlywood;
+    width: 40%;
+    border: 2px solid;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.block1 h2, .block2 h2, .block3 h2, .block4  h2{
+	margin: 0;
+}
+
+.block1 h2, .block2 h2, .block3 h2, .block4  h2{
+	margin: 0;
+}
+
+.submit{
+	margin-left:5px;
+}
+
+table h2 {
     padding: 1em;
     text-align: center;
 }
 
-.block1 form {
-    width: 200px;
+table{
+    vertical-align: middle;
+	    margin-right: auto;
     margin-left: auto;
-    margin-right: auto;
-    background-color: gainsboro;
 }
+
+
+.block1 {
+    width: 200px;
+}
+
+.block2 {
+    width: 200px;
+}
+
+.block3 {
+    width: 200px;
+}
+
+.block4 {
+    width: 200px;
+}
+
 
 nav ul {
     list-style-type: none;
@@ -135,12 +170,22 @@ nav li {
     float: left;
 }
 
+nav p {
+    color: white;
+    font-size: 20px;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-top: 7px;
+    
 }
 
 /* Change the link color to #111 (black) on hover */
