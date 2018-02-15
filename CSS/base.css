@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    padding-bottom: 30px;
     background-size: 90%;
     background-image: url(../image/back1.jpg);
     background-color:rgba(0,0,0,0.5)
