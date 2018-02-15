@@ -47,10 +47,9 @@
 //			document.getElementById('d').innerHTML = UserChoices
 			
 			// display choices generated
-			var answer = "Our suggest<ul>"
+			var answer = "Someone suggested: "
 			var random = Math.floor(Math.random() * counter)
-            answer += "<li>" + choices[random].value + "</li>"
-			answer += "</ul>"
+            answer += choices[random].value;
 			document.getElementById('result').innerHTML = answer
 		}
 	}
@@ -60,8 +59,8 @@
         var input = '<input type="text" id="choices" name="food[]">'
         var inputBoxes = document.getElementsByClassName('newInput')
         var errmsg = document.getElementById('tooMuchInput')
-        if (counter == 8) {
-            errmsg.innerHTML = "you only allowed 8 boxes"   
+        if (counter == 6) {
+            errmsg.innerHTML = "maximum of 6 choices"   
         } else {
             inputBoxes[counter].innerHTML = input
             counter++
@@ -102,7 +101,6 @@
         </div>
         <div class ="join">
             <div class="userInput">
-
                 <h2>User Input</h2>
                 <p>Please enter your choices here: </p>
                 <p class="newInput"><input type="text" placeholder="e.g. apple"></p>
@@ -119,25 +117,18 @@
                 <button id="delete" type="button" onclick="deleteBox();">-</button>
                 </p>
                 <p id="noEntry"></p>
-    <!--
+				<!--
                 <p>how many choice(number): <input type="text" id="n"></p>
                 -->
                 <div id="submit"><button type="button">Choose!</button></div>
-            </div>    
-            <div class="userResult">
-                <h2>User Result</h2>
-                <p id="result"></p>
+				<p id="result"></p>
             </div>
         </div>
-    </div> <!-- End of wrapper -->
-        
+    </div> <!-- End of wrapper -->        
         <footer>
             <div class="footer_content">
                 <p>By NS group: Alisa, Eric, Maggie, Haruna, Ryan, and Thomas. All rights reserved.</p>
             </div>
         </footer>
-
     </body>
-
-
 </html>

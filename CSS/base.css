@@ -18,10 +18,6 @@ footer {
     font-family: 'Oswald', sans-serif;
 }
 
-.wrapper {
-    position: relative;
-}
-
 .foodHeader h1 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -48,7 +44,7 @@ footer {
 }
 
 #submit {
-	margin-left: 20px;	
+	margin-left: 0px;	
 }
  
 .join {
@@ -58,25 +54,15 @@ footer {
     margin-right: auto;
 }
 
-.userResult {
-    height: 500px;
-    background-color: burlywood;
-    width: 40%;
-    border: 2px solid;
-    margin-left: auto;
-}
-
-.userResult h2 {
-    text-align: center;
-}
-
 .userInput {
-    height: 500px;
+    height: auto;
     background-color: burlywood;
     width: 40%;
+	text-align: center;
     border: 2px solid;
     margin-right: auto;
-}
+    margin-left: auto;
+	}
 
 .userInput input {
     width: 200px;
@@ -84,6 +70,10 @@ footer {
 
 .userInput h2 {
     text-align: center;
+}
+
+.userInput #result {
+	text-align:center;
 }
 
 header {
@@ -97,10 +87,6 @@ header {
     border: 2px solid;
     margin-right: auto;
     margin-left: auto;
-}
-
-.block1 h2, .block2 h2, .block3 h2, .block4  h2{
-	margin: 0;
 }
 
 .block1 h2, .block2 h2, .block3 h2, .block4  h2{
