@@ -2,9 +2,10 @@ html, body {
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
-    background-size: 90%;
+    background-size: 100% 100%;
     background-image: url(../image/back1.jpg);
-    background-color:rgba(0,0,0,0.5)
+    background-color:rgba(0,0,0,0.5);
+	background-repeat:no-repeat;
 }
 
 header {
@@ -106,6 +107,7 @@ header {
     width: 200px;
     margin-right: auto;
     margin-left: auto;
+	margin-bottom: 20px;
     padding-left:30px;
     padding-right: 30px;
 }
@@ -147,7 +149,7 @@ table {
 
 table td {
   height:220px;
-  width: 330px;
+  width: 280px;
 }
 nav ul {
     list-style-type: none;
