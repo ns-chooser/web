@@ -51,6 +51,12 @@
 			var random = Math.floor(Math.random() * counter)
             answer += choices[random].value;
 			document.getElementById('result').innerHTML = answer
+            // the 10,000 most comment words, taken from https://goo.gl/hfjFkz
+    var words = [ "the", "of", "and", "to", "in", "i"];
+
+    var display = document.getElementsByClassName('word')
+    display[0].innerHTML = choices[random].value
+    display[1].innerHTML = choices[random].value
 		}
 	}
     
@@ -86,11 +92,13 @@
 	</head>
 
 	<body>
-        <nav>
+        <nav id="links">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./choices.html">Choice</a></li>
-                <p>Fooderizer</p>
+                <div id="pagetitle">Fooderizer</div>
+                <li></li>
+                <li></li>
             </ul>
         </nav>
         
@@ -123,6 +131,7 @@
                 <div id="submit"><button type="button">Choose!</button></div>
 				<p id="result"></p>
             </div>
+            
         </div>
     </div> <!-- End of wrapper -->        
         <footer>
