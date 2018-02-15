@@ -123,12 +123,22 @@ nav li {
     float: left;
 }
 
+nav p {
+    color: white;
+    font-size: 20px;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-top: 7px;
+    
 }
 
 /* Change the link color to #111 (black) on hover */
