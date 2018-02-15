@@ -1,16 +1,15 @@
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
-    background-size: 90%;
     background-color: skyblue;
 }
 
 footer {
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
     background-color: dimgrey;
+    
 }
 
 .footer_content p {
@@ -20,7 +19,6 @@ footer {
 }
 
 .wrapper {
-    height: 100%;
     position: relative;
 }
 
@@ -93,6 +91,15 @@ header {
     text-align: center;
 }
 
+.block1 {
+    background-color: burlywood;
+    width: 40%;
+    border: 2px solid;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
 .block1 h2 {
     padding: 1em;
     text-align: center;
@@ -102,7 +109,6 @@ header {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-color: gainsboro;
 }
 
 nav ul {
