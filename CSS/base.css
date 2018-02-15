@@ -113,20 +113,20 @@ header {
     text-align: center;
 }
 
-.block1, .block2, .block3, .block4 {
+#block1, #block2, #block3, #block4 {
     border-radius: 15px;
     background: rgba(255,255,255,.5);
-    width: 40%;
+    width: 200px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.block1 h2, .block2 h2, .block3 h2, .block4  h2{
+#block1 h2, #block2 h2, #block3 h2, #block4  h2{
 	margin: 0;
 }
 
-.block1, .block2, .block3, .block4 {
-    width: 200px;
+.blank{
+	height:500px;	
 }
 
 .submit{
