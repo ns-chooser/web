@@ -1,9 +1,15 @@
 html, body {
     margin: 0;
     padding: 0;
+    padding-bottom: 30px;
     background-size: 90%;
     background-image: url(../image/back1.jpg);
     background-color:rgba(0,0,0,0.5)
+}
+
+header {
+    background-color: dimgrey;
+    text-align: center;
 }
 
 footer {
@@ -34,35 +40,16 @@ footer {
     font-family: 'Oswald', sans-serif;
     border-radius: 15px;
     background: rgba(255,255,255,.5);
-	width:30%;
+	  width:24%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#questions {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#questions form {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/*********index.html************/
 .newinput {
-	margin-left: 5px;	
+	margin-left: 5px;
 }
 
-#add {
-	margin-left: 5px;		
-}
-
-#submit {
-	margin-left: 0px;	
-}
- 
 .join {
     display: flex;
     width: 70%;
@@ -74,24 +61,23 @@ footer {
     border-radius: 15px;
     height: 500px;
     background-color: white;/*#F9BF45;*/
-    background: rgba(255,255,255,.5); 
-
+    background: rgba(255,255,255,.5);
     width: 40%;
     margin-left: auto;
-    
+
 }
 
 .userInput {
     border-radius: 15px;
     height: auto;
-    background: rgba(255,255,255,.5); 
+    background: rgba(255,255,255,.5);
     width: 40%;
     margin-right: auto;
     margin-left: auto;
 	}
 
 .newInput {
-    text-align: center;
+  text-align: center;
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
@@ -108,29 +94,39 @@ footer {
 	text-align:center;
 }
 
-header {
-    background-color: dimgrey;
-    text-align: center;
-}
-
+/***********choices.html**************/
 .block1, .block2, .block3, .block4 {
     border-radius: 15px;
     background: rgba(255,255,255,.5);
     width: 40%;
     margin-right: auto;
     margin-left: auto;
+    padding-left:30px;
+    padding-right: 30px;
 }
 
 .block1 h2, .block2 h2, .block3 h2, .block4  h2{
-	margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.block1 form, .block2 form, .block3 form, .block4  form {
+	width:100px;
+  margin: auto;
+  text-align: left;
+}
+
+.block1 input, .block2 input, .block3 input, .block4  input {
+  margin-bottom:10px;
 }
 
 .block1, .block2, .block3, .block4 {
     width: 200px;
 }
 
-.submit{
-	margin-left:5px;
+.submit { /*Submit button*/
+  margin-top:5px;
+  margin-left: 20px;
 }
 
 table h2 {
@@ -138,12 +134,16 @@ table h2 {
     text-align: center;
 }
 
-table{
+table {
     vertical-align: middle;
 	    margin-right: auto;
     margin-left: auto;
 }
 
+table td {
+  height:220px;
+  width: 330px;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -173,7 +173,7 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-top: 7px;    
+    margin-top: 7px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -276,7 +276,7 @@ h3 {
     background: #F9BF45;
     color: #ff7c5c;
     font-weight: bold;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);    
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
 
 .btn:active {
