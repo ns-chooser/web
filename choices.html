@@ -7,7 +7,16 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/base.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    
+<script>
+ 
+function clear_questions(){
+	
+//	document.parentElement.node.innerHTML = "<div class ="blank">Hello</div>";
+//	alert("ok");
+}
+
+</script>    
+
 </head>
 <body>
     
@@ -16,8 +25,8 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./choices.html">Choice</a></li>
 			<div id="pagetitle">Fooderizer</div>
-                <li></li>
-                <li></li>
+            <li></li>
+            <li></li>
 		</ul>
     </nav>
     
@@ -28,58 +37,58 @@
 	<table>
 	<tr>
 		<td>
-		<div class="block1">	
+		<div id="block1">	
 			<h2>Your choices:</h2>
 			<form>
-				<input type="radio" name="food" />Earl Grey<br />
+				<input type="radio" name="food" checked/>Earl Grey<br />
 				<input type="radio" name="food" />Rooibois<br />
 				<input type="radio" name="food" />Green Tea<br />
 				<input type="radio" name="food" />Black Tea<br />
 				<input type="radio" name="food" />Bubble Tea<br />
 				<input type="radio" name="food" />Iced Tea<br />
-				<input class="submit" type="button" value="Answer!"/>
+				<input class="submit" onclick="this.parentElement.parentElement.style.display='none';" type="button" value="Answer!"/>
 			</form>		
 		</div>
 		</td>
 		<td>
-		<div class="block2">	
+		<div id="block2">	
 			<h2>Your choices:</h2>
 			<form>
-				<input type="radio" name="food" />Donair<br />
+				<input type="radio" name="food" checked/>Donair<br />
 				<input type="radio" name="food" />Dim Sum<br />
 				<input type="radio" name="food" />Souvlaki<br />
 				<input type="radio" name="food" />Sushi<br />
 				<input type="radio" name="food" />Ramen<br />
 				<input type="radio" name="food" />Hot Dogs<br />
-				<input class="submit" type="button" value="Answer!"/>
+				<input class="submit" onclick="this.parentElement.parentElement.style.display='none';" type="button" value="Answer!"/>
 			</form>		
 		</div>
 		</td>
 	</tr>	
 	<tr>
 		<td>
-		<div class="block3">	
+		<div id="block3">	
 			<h2>Your choices:</h2>
 			<form>
-				<input type="radio" name="food" />Apple<br />
+				<input type="radio" name="food" checked/>Apple<br />
 				<input type="radio" name="food" />Banana<br />
 				<input type="radio" name="food" />Pear<br />
 				<input type="radio" name="food" />Peach<br />
 				<input type="radio" name="food" />Kiwi<br />
-				<input class="submit" type="button" value="Answer!"/>
+				<input class="submit" onclick="this.parentElement.parentElement.style.display='none';" type="button" value="Answer!"/>
 			</form>		
 		</div>
 		</td>
 		<td>
-		<div class="block4">	
+		<div id="block4">	
 			<h2>Your choices:</h2>
 			<form>
-				<input type="radio" name="food" />Pocky<br />
+				<input type="radio" name="food" checked/>Pocky<br />
 				<input type="radio" name="food" />Starburst<br />
 				<input type="radio" name="food" />Creme Egg<br />
 				<input type="radio" name="food" />Skittles<br />
 				<input type="radio" name="food" />Smarties<br />				
-				<input class="submit" type="button" value="Answer!"/>
+				<input class="submit" onclick="this.parentElement.parentElement.style.display='none';" type="button" value="Answer!"/>
 			</form>		
 		</div>
 	</td>

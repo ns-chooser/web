@@ -94,34 +94,39 @@ footer {
 	text-align:center;
 }
 
+header {
+    background-color: dimgrey;
+    text-align: center;
+}
+
 /***********choices.html**************/
-.block1, .block2, .block3, .block4 {
+#block1, #block2, #block3, #block4 {
     border-radius: 15px;
     background: rgba(255,255,255,.5);
-    width: 40%;
+    width: 200px;
     margin-right: auto;
     margin-left: auto;
     padding-left:30px;
     padding-right: 30px;
 }
 
-.block1 h2, .block2 h2, .block3 h2, .block4  h2{
+#block1 h2, #block2 h2, #block3 h2, #block4  h2{
   margin-bottom: 10px;
   padding: 0;
 }
 
-.block1 form, .block2 form, .block3 form, .block4  form {
+#block1 form, #block2 form, #block3 form, #block4  form {
 	width:100px;
   margin: auto;
   text-align: left;
 }
 
-.block1 input, .block2 input, .block3 input, .block4  input {
+#block1 input, #block2 input, #block3 input, #block4  input {
   margin-bottom:10px;
 }
 
-.block1, .block2, .block3, .block4 {
-    width: 200px;
+.blank{
+	height:500px;	
 }
 
 .submit { /*Submit button*/
