@@ -52,6 +52,12 @@
             answer += "<li>" + choices[random].value + "</li>"
 			answer += "</ul>"
 			document.getElementById('result').innerHTML = answer
+            // the 10,000 most comment words, taken from https://goo.gl/hfjFkz
+    var words = [ "the", "of", "and", "to", "in", "i"];
+
+    var display = document.getElementsByClassName('word')
+    display[0].innerHTML = choices[random].value
+    display[1].innerHTML = choices[random].value
 		}
 	}
     
@@ -87,7 +93,7 @@
 	</head>
 
 	<body>
-        <nav>
+        <nav id="links">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./choices.html">Choice</a></li>
@@ -122,12 +128,19 @@
     <!--
                 <p>how many choice(number): <input type="text" id="n"></p>
                 -->
-                <div id="submit"><button type="button">Choose!</button></div>
+                <div id="submit"><a class="btn">Choose!</a></div>
             </div>    
             <div class="userResult">
                 <h2>User Result</h2>
                 <p id="result"></p>
+                <h3 id="animation">
+                    <svg role="img">
+                        <text class="word" dominant-baseline="central" fill="#222" stroke="#222" stroke-linecap="round" stroke-width="1.5%" text-anchor="middle" x="50%" y="50%"></text>
+                        <text class="word" dominant-baseline="central" fill="white" text-anchor="middle" x="50%" y="50%"></text>
+                    </svg>
+                </h3>
             </div>
+            
         </div>
     </div> <!-- End of wrapper -->
         
